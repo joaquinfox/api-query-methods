@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# API Queries with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Intro and purpose
 
-## Available Scripts
+This repository demonstrates different methods of getting data from an API, using React. It is _not_ a deep dive into the pros and cons of each method. It _is_ a working template of alternative techniques.
 
-In the project directory, you can run:
+For a discussion on the pros and cons of each method see [How To Fetch Data In React](https://reedbarger.com/fetch-data-in-react/), by [Reed Barger](https://reedbarger.com/).
 
-### `npm start`
+Query methods covered:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- fetch
+- axios
+- useFetch
+- React Query.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I will also iterate on each method and show alternate syntax for structuring a query. The goal is to provide a comprehensive gallery of alternative tools and syntax for calling API's.
 
-### `npm test`
+### API endpoints used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [jsonplaceholder](https://jsonplaceholder.typicode.com/)
+- [randomuser.me](https://randomuser.me/)
+- [reddit.com](https://www.reddit.com/r/reactjs.json)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The first two are fake data generators. They are great for testing and learning but they are simplistic. Reddit is used to make things a little harder and more realistic.
