@@ -18,10 +18,11 @@ article {
 }
 .code_img {
   box-shadow: 1px 2px 10px black;
-  max-width: 60%;
+  width: 60%;
 }
 
 .sub-header {
-  color: grey;
+  color: rgb(172, 155, 155);
   font-style: italic;
+  border-top: 3px solid rgb(172, 155, 155);
 }
