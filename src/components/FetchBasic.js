@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fetchBasic from '../images/fetch_basic.png';
+import fetchAsync from '../images/fetch_async.png';
 
 const FetchBasic = () => {
   return (
@@ -55,6 +56,20 @@ const FetchBasic = () => {
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
+      </section>
+      <section>
+        <p>
+          Here is a fetch request with async-await syntax, for a terser call.
+        </p>
+        <p>
+          <p className="sub-header">Code</p>
+          <img
+            className="code_img"
+            src={fetchAsync}
+            alt="code snippet of a basic fetch request writtern asynchronously"
+            width="100%"
+          />
+        </p>
       </section>
     </div>
   );
